@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,125 +19,194 @@
 
 <body>
     <!-- Header -->
-
     <header>
-        <div class="container py-3">
-            <div class="row justify-content-between">
-                <div class="col-5 col-md-4 col-lg-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div class="container-fluid" style="padding: 0;">
+            <nav class="navbar navbar-expand-md" style="background-color: rgb(48, 64, 81);">
+                <div class="container">
+                    <a class="navbar-brand" href="#" style="color: white;">START BOOTSTRAP</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="color: white;">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2 col-md-4 col-lg-3">
-                   Lorem ipsum
-                </div>
-            </div>
+            </nav>
         </div>
     </header>
 
     <!-- Main -->
     <main>
         <!-- Hero -->
-        <div class="container text-center py-5 ">
-            <div class="row justify-content-center grid gap-3">
-                <div class="col-5 col-md-4 col-lg-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-                <div class="w-100"></div>
-                <div class="col-7 col-lg-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-                <div class="w-100"></div>
-                <div class="col-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
-                <div class="col-11 col-md-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </div>
+        <div class="container-fluid py-5 text-center" style="background-color: rgb(32, 187, 155); color: white;">
+            <img src="img/avatar.svg" alt="" style="width: 16rem;" class="mb-2">
+            <h1>START BOOTSTRAP</h1>
+            <div class="ms_star mb-2">
+                <hr class="border-3" style="color: white; opacity: 1;">
+                <i class="fa-solid fa-star"></i>
+                <hr class="border-3" style="color: white; opacity: 1;">
             </div>
+            <span>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</span>
         </div>
+
+
         <!-- Portfolio -->
-        <div class="container text-center py-5">
-            <div class="row justify-content-center grid gap-3">
-                <div class="col-4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </div>
-                <div class="w-100"></div>
-                <div class="col-5">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </div>
-                <div class="w-100"></div>
-                <div class="col-12 col-md-6 col-lg-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                <div class="col-12 col-md-6 col-lg-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                <div class="col-12 col-md-6 col-lg-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                <div class="col-12 col-md-6 col-lg-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                <div class="col-12 col-md-6 col-lg-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                <div class="col-12 col-md-6 col-lg-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+        <div class="container text-center py-5 ">
+            <h2>PORTFOLIO</h2>
+            <div class="ms_star mb-2">
+                <hr class="border-3" style="color: black; opacity: 1;">
+                <i class="fa-solid fa-star" style="color: black; opacity: 1;"></i>
+                <hr class="border-3" style="color: black; opacity: 1;">
+            </div>
+            <div class="row ">
+                <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="img/cabin.png" alt="" style="width: 100%;"
+                        class="rounded"></div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="img/cake.png" alt="" style="width: 100%;"
+                        class="rounded"></div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="img/circus.png" alt="" style="width: 100%;"
+                        class="rounded"></div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="img/game.png" alt="" style="width: 100%;"
+                        class="rounded"></div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="img/safe.png" alt="" style="width: 100%;"
+                        class="rounded"></div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4"><img src="img/submarine.png" alt="" style="width: 100%;"
+                        class="rounded"></div>
             </div>
         </div>
+
+
         <!-- About -->
-        <div class="container py-5">
-            <div class="row justify-content-center grid gap-3">
-                <div class="col-3 text-center">lorem ipsum</div>
-                <div class="w-100"></div>
-                <div class="col-4 text-center">lorem ipsum</div>
-                <div class="w-100"></div>
-                <div class="col-8 col-md-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod debitis,
-                    sequi quos
-                    facere sapiente ullam ratione rerum beatae modi repellendus cum quis laborum nemo enim suscipit
-                    officia. Voluptatibus, quos accusantium.</div>
-                <div class="col-8 col-md-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum
-                    repellendus omnis voluptatem culpa, animi cupiditate libero consectetur. Perferendis molestiae
-                    officia et ab eligendi reprehenderit nemo nisi maxime, quasi ad?</div>
-                <div class="w-100"></div>
-                <div class="col-4 col-md-2 text-center">lorem ipsum</div>
+        <div class="container-fluid py-5 text-center" style="background-color: rgb(32, 187, 155); color: white;">
+            <div class="container">
+                <h2>ABOUT</h2>
+                <div class="ms_star mb-2">
+                    <hr class="border-3" style="color: white; opacity: 1;">
+                    <i class="fa-solid fa-star" style="color: white; opacity: 1;"></i>
+                    <hr class="border-3" style="color: whhite; opacity: 1;">
+                </div>
+                <div class="row justify-content-center">
+                    <p class="col-8 col-md-6 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                        rem voluptatibus laborum facere ut
+                        officiis excepturi earum, voluptate illum velit, repellat facilis reprehenderit fugiat iusto
+                        inventore commodi? Voluptatum, vitae porro. Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Reiciendis tempore beatae praesentium voluptatibus similique, dolor sit quis quos harum.
+                        Quaerat quis quos omnis nesciunt ea sit illo rem unde fugiat.</p>
+                    <p class="col-8 col-md-6 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                        maiores, saepe
+                        esse minima itaque
+                        praesentium vero omnis et, modi qui unde aliquam, quae eum quas ex doloremque adipisci
+                        consectetur expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos culpa sit
+                        libero voluptate omnis magni assumenda aliquid deserunt? Ipsam impedit dignissimos alias ipsa
+                        doloremque sequi animi fugit dolorum ullam quisquam.</p>
+                </div>
+                <button class="btn btn-outline-light"><i class="fa-solid fa-download ms_download"></i>Download</button>
             </div>
         </div>
+
 
         <!-- Contact -->
-        <div class="container py-5">
-            <div class="row justify-content-center grid gap-4">
-                <div class="col-5 text-center">lorem ipsum</div>
-                <div class="w-100"></div>
-                <div class="col-4 text-center">lorem ipsum</div>
-                <div class="w-100"></div>
-                <div class="col-8 col-md-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
-                    quisquam,
-                    magnam, dolorem reprehenderit repudiandae veritatis natus nisi repellat in rerum, deleniti ab qui
-                    dolorum beatae soluta non at velit pariatur.</div>
-                <div class="col-8 col-md-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
-                    quisquam,
-                    magnam, dolorem reprehenderit repudiandae veritatis natus nisi repellat in rerum, deleniti ab qui
-                    dolorum beatae soluta non at velit pariatur.</div>
-                <div class="col-8 col-md-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
-                    quisquam,
-                    magnam, dolorem reprehenderit repudiandae veritatis natus nisi repellat in rerum, deleniti ab qui
-                    dolorum beatae soluta non at velit pariatur.</div>
-                <div class="col-8 col-md-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
-                    quisquam,
-                    magnam, dolorem reprehenderit repudiandae veritatis natus nisi repellat in rerum, deleniti ab qui
-                    dolorum beatae soluta non at velit pariatur.</div>
-                <div class="col-8 col-md-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
-                    quisquam,
-                    magnam, dolorem reprehenderit repudiandae veritatis natus nisi repellat in rerum, deleniti ab qui
-                    dolorum beatae soluta non at velit pariatur.</div>
-                <div class="col-8 col-md-10">lorem ipsum</div>
+        <div class="container text-center py-5 ">
+            <h2>CONTACT ME</h2>
+            <div class="ms_star mb-2">
+                <hr class="border-3" style="color: black; opacity: 1;">
+                <i class="fa-solid fa-star" style="color: black; opacity: 1;"></i>
+                <hr class="border-3" style="color: black; opacity: 1;">
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control border border-top-0 border-start-0 border-end-0 rounded-0"
+                    placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea"><strong>Name</strong></label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control border border-top-0 border-start-0 border-end-0 rounded-0"
+                    placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea"><strong>Email Adress</strong></label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control border border-top-0 border-start-0 border-end-0 rounded-0"
+                    placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea"><strong>Phone Number</strong></label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control border border-top-0 border-start-0 border-end-0 rounded-0"
+                    placeholder="Leave a comment here" id="floatingTextarea" style="height: 150px"></textarea>
+                <label for="floatingTextarea"><strong>Message</strong></label>
+            </div>
+            <div class="text-start">
+                <button class="btn btn-outline-light ms_send">Send</button>
             </div>
         </div>
 
+
         <!-- Info -->
-        <div class="container text-center py-5">
-            <div class="row justify-content-center grid gap-5">
-                <div class="col-10 col-md-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                <div class="col-8 col-md-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                <div class="col-11 col-md-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+        <div class="container-fluid py-5 text-center" style="background-color: rgba(33, 63, 98, 0.735); color: white;">
+            <div class="container">
+                <div class="row justify-content-center gy-5 ">
+                    <div class="col-7 col-md-4">
+                        <h5>LOCATION</h5>
+                        <span>2215 John Daniel Drive Clark, MO 54243</span>
+                    </div>
+                    <div class="col-7 col-md-4">
+                        <h5>AROUND THE WEB</h5>
+                        <ul class="d-flex flex-row justify-content-between" style="padding: 0;">
+                            <li class="list-group-item">
+                                <div class="ms_circle">
+                                    <i class="fa-brands fa-facebook-f" style="font-size: 1.5rem;"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="ms_circle">
+                                    <i class="fa-brands fa-google-plus-g" style="font-size: 1.5rem;"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="ms_circle">
+                                    <i class="fa-brands fa-twitter" style="font-size: 1.5rem;"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="ms_circle">
+                                    <i class="fa-brands fa-linkedin-in" style="font-size: 1.5rem;"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-7 col-md-4">
+                        <h5>ABOUT FREELANCER</h5>
+                        <span>Freelance is a free to use, open source Bootstrap theme created by <span
+                                style="color: rgb(32, 187, 155);">Start Bootstrap</span>.</span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <div class="container text-center py-3">
-        <div class="row justify-content-center">
-            <div class="col-6 col-md-3">Lorem ipsum dolor</div>
-        </div>
+    <div class="container-fluid py-4 text-center" style="background-color: rgb(48, 64, 81); color: white;">
+        <span style="font-size: 0.8rem;">Copyright @ Your Website 2019</span>
+    </div>
 
 </body>
 

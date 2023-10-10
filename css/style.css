@@ -2,9 +2,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-    /* debug */
-    border: 1px solid crimson;
 }
 
-/* utility */
+.navbar-nav {
+    --bs-nav-link-color: white;
+}
+
+.ms_star {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.ms_star hr {
+    width: 6rem;
+}
+
+.ms_download {
+    margin-right: 4px;
+}
+
+.ms_send {
+    background-color: rgb(32, 187, 155);
+    margin-top: 1rem;
+}
+
+.ms_circle {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+}
